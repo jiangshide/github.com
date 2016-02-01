@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_size_10"
+    android:background="@drawable/album_border"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/albumImg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_size_100"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/albumTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_5"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="sss"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/txt_size_max_18" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/albumRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/layout_size_5" 
+        android:src="@drawable/single_selecte"
+        android:padding="@dimen/layout_size_10"
+        />
+
+</FrameLayout>

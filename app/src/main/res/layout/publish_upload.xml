@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/layout_size_45"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/uploadTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="此刻的心情..."
+            android:minLines="4"
+            android:padding="@dimen/layout_size_10" />
+
+        <GridView
+            android:id="@+id/uploadImgList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/transparent"
+            android:numColumns="5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:padding="@dimen/layout_size_5"
+            android:scaleType="matrix"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/transparent"
+            android:onClick="camera"
+            android:padding="@dimen/layout_size_5"
+            android:text="我的心情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_max_20" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_size_10"
+            android:background="@color/transparent"
+            android:onClick="publish"
+            android:padding="@dimen/layout_size_5"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_max_18" />
+    </RelativeLayout>
+
+</FrameLayout>

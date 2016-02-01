@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_size_5"
+    android:background="@drawable/album_border"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ch.halcyon.squareprogressbar.SquareProgressBar
+        android:id="@+id/albumUploadImg"
+        android:layout_width="@dimen/layout_size_86"
+        android:layout_height="@dimen/layout_size_86"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+    </ch.halcyon.squareprogressbar.SquareProgressBar>
+</LinearLayout>

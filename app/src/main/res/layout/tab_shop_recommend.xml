@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/shopRecommendLogo"
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/layout_size_5"
+        android:src="@drawable/recommend_logo"
+        android:layout_marginTop="@dimen/layout_size_10"
+         />
+
+    <ImageView
+        android:id="@+id/shopRecommendImg"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_margin="@dimen/layout_size_5"
+        android:scaleType="fitXY"
+        android:src="@drawable/recommend_img" />
+
+    <TextView
+        android:id="@+id/shopRecommendDes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_size_5"
+        android:text="      草木年华有五大草木年华有五大草木年华有五大草木年华有五大草木年华有五大草木年华有五大草木年华有五大"
+        android:textColor="@color/yellow1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_size_5"
+        android:layout_marginBottom="@dimen/layout_size_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/shopRecommendPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥59.0"
+            android:textColor="@color/pink" />
+
+        <TextView
+            android:id="@+id/shopRecommendMaketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_size_10"
+            android:text="¥259.0"
+            android:textColor="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/shopRecommendLabel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

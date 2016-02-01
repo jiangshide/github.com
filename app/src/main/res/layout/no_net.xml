@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:id="@+id/noNetL"
+    android:gravity="center"
+    android:background="@color/yellow"
+    android:padding="@dimen/layout_size_6"
+    android:visibility="gone"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抱歉,没网了..."
+        android:textSize="@dimen/txt_size_max_20"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

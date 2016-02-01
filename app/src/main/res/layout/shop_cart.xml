@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <com.zdb.android.view.refresh.ZrcListView
+        android:id="@+id/shopCartList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dip"
+        android:background="@null"
+        android:divider="@drawable/transparent"
+        android:dividerHeight="@dimen/layout_size_1" />
+
+    <include layout="@layout/tab_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_border_top_pink"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_size_5" >
+
+        <CheckBox
+            android:id="@+id/shopCartAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="全选" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shopCartMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计：¥248:00" />
+
+            <TextView
+                android:id="@+id/shopCartFreight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不含运费" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shopCartSettlement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_pink"
+            android:paddingBottom="@dimen/layout_size_10"
+            android:paddingLeft="@dimen/layout_size_20"
+            android:paddingRight="@dimen/layout_size_20"
+            android:paddingTop="@dimen/layout_size_10"
+            android:text="结算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_max_16" />
+    </LinearLayout>
+
+</FrameLayout>

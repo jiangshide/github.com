@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="visualizerView">
+        <attr name="numColumns" format="integer" />
+        <attr name="renderColor" format="color" />
+        <attr name="renderRange">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+        <attr name="renderType">
+            <flag name="bar" value="0x1" />
+            <flag name="pixel" value="0x2" />
+            <flag name="fade" value="0x4" />
+        </attr>
+    </declare-styleable>
+    
+    <string-array name="colorArr">
+        <item>#FF34B3</item>
+        <item>#9ACD32</item>
+        <item>#BA55D3</item>
+        <item>#8B7765</item>
+        <item>#7FFFD4</item>
+        <item>#6E8B3D</item>
+        <item>#4B0082</item>
+        <item>#00EE76</item>
+        <item>#EE7942</item>
+        <item>#EE3A8C</item>
+    </string-array>
+
+    
+</resources>

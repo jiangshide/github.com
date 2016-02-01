@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tab_friend_data_top_me" />
+
+    <TextView
+        android:id="@+id/topicSign"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_size_1"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/layout_size_10"
+        android:paddingLeft="@dimen/layout_size_20"
+        android:paddingRight="@dimen/layout_size_20"
+        android:paddingTop="@dimen/layout_size_10"
+        android:text="个性签名："
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_size_1"
+        android:layout_marginTop="@dimen/layout_size_5"
+        android:background="@color/white"
+        android:padding="@dimen/layout_size_10"
+        android:text="相册"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_max_15" />
+
+    <include layout="@layout/topic_nav" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:saveEnabled="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/topicImgArr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_size_1"
+        android:layout_marginTop="@dimen/layout_size_5"
+        android:background="@color/white"
+        android:padding="@dimen/layout_size_10"
+        android:text="我的话题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_max_15" />
+
+</LinearLayout>

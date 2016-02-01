@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="@dimen/layout_size_5"
+     >
+
+    <ImageView
+        android:id="@+id/shopItemImg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/shop_item" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/shopItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_5"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_max_16"
+            android:text="雅蓝丝带红石榴水 鲜亮焕彩精粹水200ml" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_5"
+             >
+
+            <TextView
+                android:id="@+id/shopItemPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:text="21人购买" />
+
+            <ImageView
+                android:id="@+id/shopItemStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/star" />
+        </RelativeLayout>
+
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+		    <TextView
+            android:id="@+id/shopItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_5"
+            android:textColor="@color/pink"
+            android:text="¥128.00" />
+		    <TextView
+            android:id="@+id/shopItemMaketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_5"
+            android:textColor="@color/gray"
+            android:text="¥248.00" />
+		</LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_5"
+             >
+
+            <ImageView
+                android:id="@+id/shopItemPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/freeshop" />
+
+            <TextView
+                android:id="@+id/shopItemGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/round_pink"
+                android:textColor="@color/white"
+                android:padding="@dimen/layout_size_5"
+                android:text="去购买" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

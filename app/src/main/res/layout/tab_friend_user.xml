@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_marginTop="@dimen/layout_size_45"
+	    >
+	    <com.zdb.android.view.FlowLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:id="@+id/tagWords"
+	        />
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.zdb.android.view.pinyin.ClearEditText
+            android:id="@+id/searchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/zhanghao_icon"
+            android:drawablePadding="@dimen/layout_size_7"
+            android:hint="昵称/姓名..."
+            android:singleLine="true"
+            android:textColorHint="@color/gray_white"
+            android:textSize="@dimen/txt_size_max_16" >
+
+            <requestFocus />
+        </com.zdb.android.view.pinyin.ClearEditText>
+
+        <Button
+            android:id="@+id/searchCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_pink"
+            android:padding="@dimen/layout_size_10"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_max_16" />
+    </LinearLayout>
+
+</FrameLayout>

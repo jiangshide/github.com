@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tab_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_size_10"
+        android:layout_marginRight="@dimen/layout_size_10"
+        android:layout_marginTop="@dimen/layout_size_20"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhanghao_icon" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="phone|textEmailAddress"
+            android:hint="手机号/邮箱" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_size_20"
+        android:layout_marginLeft="@dimen/layout_size_10"
+        android:layout_marginRight="@dimen/layout_size_10"
+        android:layout_marginTop="@dimen/layout_size_4"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/suo_icon" />
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="textPassword"
+            android:hint="输入密码" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_size_10"
+        android:background="@drawable/btn_red_white"
+        android:onClick="login"
+        android:padding="@dimen/layout_size_13"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_max_20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_size_10"
+        android:layout_marginRight="@dimen/layout_size_10"
+        android:layout_marginTop="@dimen/layout_size_15" >
+
+        <LinearLayout
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="regUser"
+            android:orientation="horizontal"
+			android:layout_centerVertical="true"
+             >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_gift_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册领好礼"
+                android:textColor="@color/redLight"
+                android:textSize="@dimen/txt_size_max_16" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="lastPsw"
+            android:text="@string/lastPsw"
+            android:background="@color/transparent"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txt_size_max_14" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/layout_size_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_size_1"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="或" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_size_1"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="bindQQ"
+                android:src="@drawable/qq_3x" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="bindWeixin"
+                android:src="@drawable/weixin_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="bindWeibo"
+                android:src="@drawable/weibo_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

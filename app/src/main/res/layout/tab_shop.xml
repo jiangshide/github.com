@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <com.zdb.android.view.refresh.ZrcListView
+        android:id="@+id/shopList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dip"
+        android:background="@null"
+        android:divider="@drawable/transparent"
+        android:dividerHeight="@dimen/layout_size_1" />
+
+    <include layout="@layout/tab_top" />
+</FrameLayout>

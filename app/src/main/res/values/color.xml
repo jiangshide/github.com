@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="translate">#00000000</drawable>
+	<drawable name="pink">#ff4d7b</drawable>
+    <drawable name="red1">#ff0066</drawable>
+    <drawable name="white1">#cc99cc</drawable>
+
+    <color name="cardSelected">#ffffff</color>
+    <color name="cardSelecte">#dbd8e5</color>
+    <color name="glob_vertical">#6c6c6c</color>
+    <color name="txt_normal">#dbd8e5</color>
+    <color name="txt_light">#ffffff</color>
+    <color name="txt_yellow">#B8860B</color>
+    <color name="txt_blue">#BFEFFF</color>
+    <color name="txt_purple">#9932CC</color>
+    <color name="red">#CC0000</color>
+    <color name="grey">#ADADAD</color>
+    <color name="red1">#fe3b4d</color>
+    <color name="green1">#69c52c</color>
+    <color name="lightd">#2dbcff</color>
+    <color name="redLight">#FF4040</color>
+
+    
+    <color name="renderColor">#B3E5FC</color>
+    <color name="renderColor2">#FF35FC</color>
+    <color name="renderColor3">#3315FC</color>
+</resources>

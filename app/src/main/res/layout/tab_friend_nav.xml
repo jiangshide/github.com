@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/tabFriendSearchL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_size_50"
+        android:layout_marginRight="@dimen/layout_size_50"
+        android:layout_marginTop="@dimen/layout_size_20"
+        android:layout_marginBottom="@dimen/layout_size_10"
+        android:background="@drawable/background_view_rounded_single"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_size_10"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/translete"
+            android:text="添加新朋友"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_max_20" />
+    </LinearLayout>
+
+</LinearLayout>

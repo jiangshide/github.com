@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tab_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_size_10"
+        android:layout_marginRight="@dimen/layout_size_10"
+        android:layout_marginTop="@dimen/layout_size_20"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhanghao_icon" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="phone|textEmailAddress|textAutoComplete|textAutoCorrect"
+            android:hint="手机号/邮箱" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_size_0"
+        android:layout_marginLeft="@dimen/layout_size_10"
+        android:layout_marginRight="@dimen/layout_size_10"
+        android:layout_marginTop="@dimen/layout_size_4"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/suo_icon" />
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="textPassword|textAutoCorrect|textAutoComplete"
+            android:hint="密码:6~24位英文字母或数字" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_size_20"
+        android:layout_marginLeft="@dimen/layout_size_10"
+        android:layout_marginRight="@dimen/layout_size_10"
+        android:layout_marginTop="@dimen/layout_size_4"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/suo_icon" />
+
+        <EditText
+            android:id="@+id/identifyCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="验证码" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendIdentifyCode"
+            android:text="@string/sendIdentifyCode"
+            android:background="@color/transparent"
+            android:padding="@dimen/layout_size_10"
+            android:textSize="@dimen/txt_size_max_16"
+            android:textColor="@color/red1" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_size_10"
+        android:background="@drawable/btn_red_white"
+        android:onClick="reg"
+        android:padding="@dimen/layout_size_13"
+        android:text="@string/reg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_max_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_size_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/spreeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duihaohui_3x"
+            android:button="@null"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费抽取百元大礼包"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

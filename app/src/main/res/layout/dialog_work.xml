@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/wheelL"
+        android:layout_width="@dimen/layout_size_250"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_single"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialogTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/layout_size_10"
+            android:text="提示"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txt_size_max_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_white"
+            android:orientation="horizontal" >
+
+            <com.zdb.android.view.wheek.WheelView
+                android:id="@+id/wheel1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 />
+
+            <View
+                android:id="@+id/wheelV1"
+                android:layout_width="@dimen/layout_size_2"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:visibility="gone"
+                 />
+
+            <com.zdb.android.view.wheek.WheelView
+                android:id="@+id/wheel2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                 />
+
+            <View
+                android:id="@+id/wheelV2"
+                android:layout_width="@dimen/layout_size_2"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:visibility="gone"
+                 />
+
+            <com.zdb.android.view.wheek.WheelView
+                android:id="@+id/wheel3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                 />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dialogSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="@dimen/layout_size_10"
+            android:text="@string/sure"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txt_size_max_20" />
+    </LinearLayout>
+
+</LinearLayout>

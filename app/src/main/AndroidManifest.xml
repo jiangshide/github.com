@@ -1,0 +1,92 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zdb.android"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication"
+        >
+
+        <activity android:name="com.zdb.android.activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.RegActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.LastPswActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.UserActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.zdb.android.activity.UploadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name="com.zdb.android.activity.FileActivity" >
+        </activity>
+        <activity
+            android:name="com.zdb.android.fragment.home.DetailAcitivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.zdb.android.activity.FriendDataActivity" />
+        <activity android:name="com.zdb.android.activity.VoiceActivity" />
+        <activity android:name="com.zdb.android.activity.PublishActivity" />
+        <activity android:name="com.zdb.android.activity.PublishItemActivity" />
+        <activity android:name="com.zdb.android.activity.PublishUploadActivity" />
+        <activity android:name="com.zdb.android.activity.TestActivity" />
+        <activity android:name="com.zdb.android.activity.WarActivity" />
+        <activity android:name="com.zdb.android.activity.GuideActivity" />
+        <activity android:name="com.zdb.android.activity.TryActivity" />
+        <activity android:name="com.zdb.android.activity.ShopCartActivity" />
+        <activity android:name="com.zdb.android.activity.MoreSetActivity" />
+
+        <service android:name="com.zdb.android.ZdbService" />
+
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e9ba52fc4d12ba5928ddedada6ffc708" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+</manifest>

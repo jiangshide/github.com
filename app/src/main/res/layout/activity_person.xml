@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tab_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/head1_bg"
+                android:gravity="center" >
+
+                <com.zdb.android.view.CircleImageView
+                    android:id="@+id/pHeadImg"
+                    android:layout_width="@dimen/layout_size_80"
+                    android:layout_height="@dimen/layout_size_80"
+                    android:layout_centerInParent="true"
+                    android:onClick="pHeadImg"
+                    android:src="@drawable/head1_bg"
+                    app:border_color="@color/white"
+                    app:border_width="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_20"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pNickName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" 
+                    android:hint="@string/pNickName"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_20"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pRealName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="@string/pRealName"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="默认签名："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pUserSign"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="@string/pUserSign"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <RadioGroup
+                    android:id="@+id/pSex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/pSex0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layout_size_20"
+                        android:checked="true"
+                        android:text="女"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/pSex1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_size_20"
+                        android:checked="false"
+                        android:text="男"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <Button
+                    android:id="@+id/pAge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent"
+                    android:onClick="pAge"
+                    android:text="18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <Button
+                    android:id="@+id/pBirthday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent"
+                    android:onClick="pBirthday"
+                    android:text="1988-09-02" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学历："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <Button
+                    android:id="@+id/pEducation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent"
+                    android:onClick="pEducation"
+                    android:text="本科" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名族："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <Button
+                    android:id="@+id/pNation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent"
+                    android:onClick="pNation"
+                    android:text="侗族" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pTel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:numeric="integer"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pMobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出生地："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pBirthdayArr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮寄地址："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pMailArr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收入："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pIncome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_10"
+                android:layout_marginRight="@dimen/layout_size_10"
+                android:layout_marginTop="@dimen/layout_size_4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_size_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱好："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_size_max_20" />
+
+                <EditText
+                    android:id="@+id/pHobby"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_size_10"
+        android:background="@drawable/btn_red_white"
+        android:onClick="prefect"
+        android:padding="@dimen/layout_size_13"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_max_20" />
+
+</LinearLayout>

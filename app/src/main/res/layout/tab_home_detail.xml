@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.zdb.android.view.refresh.ZrcListView
+            android:id="@+id/homeDetailList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:divider="@drawable/transparent"
+            android:dividerHeight="@dimen/layout_size_5" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/pink" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_size_5" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+				android:onClick="homeDetailMsg"
+                android:layout_weight="1"
+                android:src="@drawable/msg1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="homeDetailShop"
+                android:src="@drawable/shop1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_size_20"
+                android:layout_marginRight="@dimen/layout_size_20"
+                android:layout_weight="2"
+                android:onClick="homeDetailAddShop"
+                android:background="@drawable/round_yellow"
+                android:padding="@dimen/txt_size_max_8"
+                android:singleLine="true"
+                android:text="加入购物车"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_size_20"
+                android:layout_weight="2"
+                android:onClick="homeDetailShoped"
+                android:background="@drawable/round_pink"
+                android:gravity="center"
+                android:padding="@dimen/txt_size_max_8"
+                android:singleLine="true"
+                android:text="立即购买"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/tab_top" />
+
+</FrameLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/banner" />
+
+    <TextView
+        android:id="@+id/homeDetailTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/layout_size_5"
+        android:paddingLeft="@dimen/layout_size_10"
+        android:paddingRight="@dimen/layout_size_10"
+        android:paddingTop="@dimen/layout_size_10"
+        android:text="雅思兰鲜亮焕彩精粹水200ml(滋润型)"
+        android:textColor="@color/yellow1"
+        android:textSize="@dimen/txt_size_max_18" />
+
+    <TextView
+        android:id="@+id/homeDetailDes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingLeft="@dimen/layout_size_10"
+        android:paddingRight="@dimen/layout_size_10"
+        android:text="雅思兰鲜亮焕彩精粹水200ml(滋润型)雅思兰鲜亮焕彩精粹水200ml(滋润型)雅思兰鲜亮焕彩精粹水200ml(滋润型)雅思兰鲜亮焕彩精粹水200ml(滋润型)雅思兰鲜亮焕彩精粹水200ml(滋润型)"
+        android:textSize="@dimen/txt_size_max_14" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/layout_size_10" >
+
+        <TextView
+            android:id="@+id/homeDetailSellPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="¥248.00"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/txt_size_max_20" />
+
+        <TextView
+            android:id="@+id/homeDetailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_size_10"
+            android:layout_marginRight="@dimen/layout_size_10"
+            android:layout_toRightOf="@+id/homeDetailSellPrice"
+            android:text="¥248.00"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txt_size_max_20" />
+
+        <ImageView
+            android:id="@+id/homeDetailPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/homeDetailPrice"
+            android:src="@drawable/freeshop" />
+
+        <TextView
+            android:id="@+id/homeDetailShopNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="已有776人购买" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_size_5"
+        android:background="@color/white"
+        android:padding="@dimen/layout_size_10" >
+
+        <ImageView
+            android:id="@+id/homeDetailShopIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/head1_bg" />
+
+        <TextView
+            android:id="@+id/homeDetailShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/layout_size_10"
+            android:layout_toRightOf="@+id/homeDetailShopIcon"
+            android:text="雅思兰戴官方旗舰" />
+
+        <ImageView
+            android:id="@+id/homeDetailArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/homeDetailAllShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/layout_size_10"
+            android:layout_toLeftOf="@+id/homeDetailArrow"
+            android:text="全部商品" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeDetailShopIcon" >
+
+        <TextView
+            android:id="@+id/homeDetailSpeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_top_right"
+            android:gravity="center"
+            android:paddingBottom="@dimen/layout_size_10"
+            android:paddingTop="@dimen/layout_size_10"
+            android:text="发货速度 4.5" />
+
+        <TextView
+            android:id="@+id/homeDetailAttitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_top_right"
+            android:gravity="center"
+            android:paddingBottom="@dimen/layout_size_10"
+            android:paddingTop="@dimen/layout_size_10"
+            android:text="服务态度 4.9" />
+
+        <TextView
+            android:id="@+id/homeDetailAgree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_top"
+            android:gravity="center"
+            android:paddingBottom="@dimen/layout_size_10"
+            android:paddingTop="@dimen/layout_size_10"
+            android:text="描述相符 4.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_size_5"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/homeDetailImgList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_bottom"
+            android:padding="@dimen/layout_size_10"
+            android:text="图片详情" />
+
+        <Button
+            android:id="@+id/homeDetailComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/translate"
+            android:padding="@dimen/layout_size_10"
+            android:text="买家评论(54)" />
+
+        <Button
+            android:id="@+id/homeDetailParameter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/translate"
+            android:padding="@dimen/layout_size_10"
+            android:text="产品参数" />
+    </LinearLayout>
+
+    <com.zdb.android.view.CusViewPager
+        android:id="@+id/homeDetailPage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+
+</LinearLayout>
